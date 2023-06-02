@@ -1,25 +1,23 @@
-title: Hello, world! I'm David Freeman
+title: 안녕하세요, 여기는 MinWooKim Blog 입니다.
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://CodingScript990.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+tags: [Holidays, Hawaii]
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: David Freeman # add your name
-author-img: david-freeman.jpg # add your photo
-about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+author: MinWooKim # add your name
+author-img: minwookim.jpg # add your photo
+about-author: 안녕하세요. 언제나 즐겁게 개발하는 김민우 개발자 블로그 입니다. # add description
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
-social-github: artemsheludko # add your Github handle
+social-github: CodingScript990 # add your Github handle
 social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+social-email: a41787192@gmail.com # add your Email address
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier: disqus_36NDk2enXS # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
