@@ -1,0 +1,45 @@
+---
+layout: post
+title: JDBC
+date: 2023-05-31 17:00:00 +0300
+description:  # Add post description (optional)
+img: jdbc.png # Add image post (optional)
+fig-caption: JDBC # Add figcaption (optional)
+tags: [JDBC, DB] # add tag
+comments: true
+---
+
+>Java - JDBC
+
+### [학습 내용]
+
+#### 1. JDBC란?
+
+*  자바 응용 프로그램이 관계형 데이터베이스에 접속하기 위한 Java Standard API함
+* Sun Microsystems Inc에서 만든 이 스펙(specification)은 JDBC Vendor로 하여금 표준을 구현 및 확장하도록 가이드를 제공함
+* Java를 이용한 데이터베이스 접속과 SQL 문장의 실행, 그리고 그 결과로 얻어진 데이터의 핸들링을 제공하는 방법과 절차에 대한 규약임
+* 개발자는 MySQL, Oracle, MS-SQL Sever 데이터베이스 등에 독립적으로 표준화된 하나의 API 사용방법만 숙지하면 됨
+
+#### 2. JDBC의 구조
+
+* DriverManager : 드라이버 리스트를 저장하고 요청된 URL에 해당하는 드라이버를 애플리케이션에 제공함
+* Connection : 하나의 논리적 데이터베이스 트랜잭션을 나타내는 클래스임
+* Statement : SQL 구문의 실행을 담당하는 클래스임
+* ResultSet : 데이터베이스 질의에 의해 얻어진 데이터의 행을 대표하는 객체임
+
+#### 3. JDBC DB접속 단계
+
+* DriverManager에 사용할 데이터베이스 드라이버를 등록함
+* DB 연결함
+* SQL문 실행함
+* DB 연결을 종료함
+
+>Java - JDBC - 실습
+
+![jdbc]({{site.baseurl}}/assets/img/jdbc2.png)
+![jdbc]({{site.baseurl}}/assets/img/jdbc3.png)
+![jdbc]({{site.baseurl}}/assets/img/jdbc4.png)
+
+>Java - JDBC - 실습후기
+
+* JDBC란 무엇인지, JDBC구조, DB와 Connection하기 위한 단계별 과정들을 실습하면서, 첫 고비가 MySQL은 그래도 쉽게 Connection을 하였는데, SQLite는 잘 안되었고, 나와 동일한 에러사항을 커뮤니티를 통해서 빠르게 해결을 하였고, 그 이유가 SQLite.jar 파일을 libraray에서 경로 설정을 잘못해줘서 jdbc connection이 되지 않았던 것이었다. 항상 유의하여 library를 확인하고 경로에 맞게 다운받아주는 습관을 키워야 겠고, try-catch-finally를 사용하여 db Connection시 에러사항을 항상 try에서 처리하게 하여 에러가 날 수 있는 부분을 방지하고 finally에서는 db connection을 종료해주는 method를 따로 만들어 종료가 되도록 설정한다. 그리고 이번에도 main method에서 모든 db connection refatoring한 부분을 각 DAO에 맞게 분리를 하여 main Class에서는 extend(상속)받게 하여 호출시에 사용이 되도록 하는 방식을 택하여 진행하였고, 오히려 이전에 학습한 것 보다 코드도 간결하고 상속을 통해서도 이해가 되었고, TDD를 하기 위해 Test Class를 생성하고 어노테이션을 사용하여 각 어떤 Test를 하는 것인지 원래는 주석으로 표기를 하였지만, Test 어노테이션에서 testName이라는 것을 지원하는 것을 찾아서 알아낸 뒤로 주석 부분을 @Test에서 어떤 부분의 Test를 하는 코드인지를 명시하여 훨씬 보기 좋게 수정하여 마무리를 지었다. 강사님께서 시킨것도 가르쳐주신 것도 아니지만 매번 주석다는 것 보다 Test 어노테이션에서 주석을 대처하는 것이 있을 것 같아서 찾아보니 나와서 바로 적용하였더니 훨씬 더 어떤의미의 Test인지 명확하게 알아 볼 수 있어서 좋다! 이렇게 스스로 찾아서 적용해보니깐 너무 즐겁고 뿌듯하다

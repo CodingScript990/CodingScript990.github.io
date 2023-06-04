@@ -934,6 +934,7 @@ table tfoot td {
   height: 100%;
   padding: 20px 10px;
   background-color: #ffffff;
+  border-right: 1px solid rgba(76, 75, 75, 0.24);
 }
 
 .about {
@@ -942,13 +943,13 @@ table tfoot td {
 }
 
 .about .cover-author-image {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   margin: 0 auto 10px;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
   overflow: hidden;
-  background-color: #333030;
+  background-color: #f3f1f1;
+  border-radius: 50%;
+  border: 1px solid #b7b7b7;
 }
 
 .about img {
@@ -956,16 +957,7 @@ table tfoot td {
   height: 100%;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
-  -o-transition: transform 0.35s;
-  transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-}
-
-.about img:hover {
-  -webkit-transform: scale3d(0.9, 0.9, 1);
-          transform: scale3d(0.9, 0.9, 1);
+  object-fit: contain;
 }
 
 .about .author-name {
@@ -1023,7 +1015,7 @@ table tfoot td {
 
 .contact .contact-title {
   position: relative;
-  color: #333030;
+  color: #1c1a1a;
   font-weight: 400;
   font-size: 12px;
   margin: 0 0 5px;
@@ -1075,6 +1067,7 @@ table tfoot td {
 
 .contact ul li:first-child {
   margin-left: 0;
+
 }
 
 .contact ul li a {

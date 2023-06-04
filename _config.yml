@@ -1,26 +1,26 @@
-title: 안녕하세요, 여기는 MinWooKim Blog 입니다.
+title: MinWooKim Blog에 오신것을 환영합니다.
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 tags: [Holidays, Hawaii]
-site-twitter: #if your site has a twitter account, enter it here
+#site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: MinWooKim # add your name
 author-img: minwookim.jpg # add your photo
 about-author: 안녕하세요. 언제나 즐겁게 개발하는 김민우 개발자 블로그 입니다. # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
+#social-twitter: # add your Twitter handle
+#social-facebook: # add your Facebook handle
 social-github: CodingScript990 # add your Github handle
-social-linkedin: # add your Linkedin handle
+#social-linkedin: # add your Linkedin handle
 social-email: a41787192@gmail.com # add your Email address
 
 # Disqus
 discus-identifier: disqus_36NDk2enXS # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+#analytics: # Google Analytics
 
 # Build Settings
 markdown: kramdown
